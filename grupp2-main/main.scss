@@ -1,0 +1,31 @@
+@import "variables";
+@import "mixins";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $font-style;
+  color: $font-color;
+  background-color: $secondary-color;
+}
+main {
+  @include main-mix;
+  background-color: $primary-color;
+}
+header {
+  @include header-mix;
+  background-color: $secondary-color;
+}
+section {
+  @include flex-section;
+}
+p {
+  font-family: $font-style;
+  color: $font-color;
+}
+footer {
+  @include footer-mix;
+  background-color: $secondary-color;
+}
